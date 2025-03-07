@@ -3,10 +3,10 @@ public class Livro {
     private String autor;
     private boolean disponivel;
 
-    public Livro(String titulo, String autor){
+    public Livro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
-        this.disponivel =true;
+        this.disponivel = true;
     }
 
     public String getTitulo() {
@@ -15,6 +15,7 @@ public class Livro {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+
     }
 
     public String getAutor() {
@@ -26,13 +27,14 @@ public class Livro {
     }
 
     public boolean isDisponivel() {
-        retun disponivel;
+        return disponivel;
     }
 
     public void setDisponivel(boolean disponivel) {
-        this.disponivel = dsponivel;
+        this.disponivel = disponivel;
     }
 
+    @Override
     public String toString() {
         return "Livro{" +
                 "titulo='" + titulo + '\'' +
